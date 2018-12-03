@@ -1,0 +1,33 @@
+{
+  "name": "ChristmasApp",
+  "version": "1.0.0",
+  "description": "Test version of Group Project #2 for UCI coding bootcamp.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hegratrix/ChristmasApp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hegratrix/ChristmasApp"
+  },
+  "homepage": "https://github.com/hegratrix/ChristmasApp",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-react-views": "^0.10.5",
+    "mysql2": "^1.6.4",
+    "path": "^0.12.7",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "require": "^2.4.20",
+    "sequelize": "^4.41.2"
+  },
+  "devDependencies": {}
+}
