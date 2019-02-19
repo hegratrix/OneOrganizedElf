@@ -26,7 +26,8 @@ module.exports = function (app) {
             itemLocation: req.body.itemLocation,
             itemPrice: req.body.itemPrice,
             itemOptions: req.body.itemOptions,
-            complete: req.body.complete
+            complete: req.body.complete,
+            usersListId: req.body.usersListId 
         })
             .then(function (dbWish) {                    
                 res.json(dbWish);

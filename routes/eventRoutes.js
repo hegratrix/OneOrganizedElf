@@ -28,7 +28,7 @@ app.post("/eventList", function (req, res) {
          eventLocation: req.body.eventLocation,
          eventInstructions: req.body.eventInstructions,
          complete: req.body.complete,    
-         
+         usersListId: req.body.usersListId 
     })
          .then(function (dbEvent) {
               res.json(dbEvent);

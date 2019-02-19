@@ -7,12 +7,18 @@ module.exports = function(sequelize, DataTypes) {
           giftName: DataTypes.STRING,
           giftBudget: DataTypes.STRING,
           giftBought: DataTypes.STRING,
-          complete: DataTypes.BOOLEAN
+          complete: DataTypes.BOOLEAN,
+          userListId: DataTypes.STRING
           }, 
           {
                freezeTableName: true,
                tableName: 'giftsList'
           }
-     );
+     )
+     // giftsList.associate = models => {
+     //      giftsList.belongsTo(models.usersList, {
+     //           foreignKey: userUID
+     //      })
+     // }
      return giftsList;
 }

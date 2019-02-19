@@ -25,13 +25,15 @@ function addWishItem() {
   var newItemLocationInput = $("#wishStore").val();
   var newItemPriceInput = $("#wishCost").val();
   var newItemOptionsInput = $("#wishOptions").val();
+  let currentID = $('.greeting').attr('id')
   var wish = {
       whichList: addingToList,
       itemName: newItemNameInput,
       itemLocation: newItemLocationInput,
       itemPrice: newItemPriceInput,
       itemOptions: newItemOptionsInput,
-      complete: false
+      complete: false,
+      usersListId: currentID
   }
   $.post("/wishList", wish)
   .then(r => {

@@ -9,10 +9,16 @@ module.exports = function(sequelize, DataTypes) {
           itemPrice: DataTypes.STRING,
           itemOptions: DataTypes.STRING,
           complete: DataTypes.BOOLEAN,
+          usersListId: DataTypes.STRING
           }, 
           {
                freezeTableName: true,
                tableName: 'wishList'
-          });
+          })
+          // wishList.associate = models => {
+          //      wishList.belongsTo(models.usersList, {
+          //           foreignKey: { allowNull: false }
+          //      })
+          // }
      return wishList;     
 }

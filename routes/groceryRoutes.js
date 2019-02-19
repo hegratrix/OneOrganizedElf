@@ -25,7 +25,8 @@ app.post("/groceryList", function (req, res) {
         whichList: req.body.whichList,
          groceryName: req.body.groceryName,
          groceryAmount: req.body.groceryAmount,
-         complete: req.body.complete
+         complete: req.body.complete,   
+         usersListId: req.body.usersListId 
     })
          .then(function (dbGroceries) {
               res.json(dbGroceries);

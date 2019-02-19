@@ -6,5 +6,6 @@ module.exports = (app) => {
     require('./giftRoutes')(app)
     require('./groceryRoutes')(app)
     require('./recipeRoutes')(app)
+    require('./userRoutes')(app)
   }
   

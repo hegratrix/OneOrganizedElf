@@ -28,7 +28,8 @@ module.exports = function (app) {
              cardCity: req.body.cardCity,
              cardState: req.body.cardState,
              cardZipCode: req.body.cardZipCode,
-             complete: req.body.complete,               
+             complete: req.body.complete,                    
+             usersListId: req.body.usersListId            
         })
              .then(function (dbCard) {
                   res.json(dbCard);

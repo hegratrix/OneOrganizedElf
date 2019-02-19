@@ -7,11 +7,17 @@ module.exports = function (sequelize, DataTypes) {
           groceryName: DataTypes.STRING,
           groceryAmount: DataTypes.STRING,
           complete: DataTypes.BOOLEAN,
+          usersListId: DataTypes.STRING
           }, 
           {
                freezeTableName: true,
                tableName: 'groceryList'
           }
-     );
+     )
+     // groceryList.associate = models => {
+     //      groceryList.belongsTo(models.usersList, {
+     //           foreignKey: { allowNull: false }
+     //      })
+     // }
      return groceryList;
 };

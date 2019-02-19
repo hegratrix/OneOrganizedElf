@@ -150,7 +150,6 @@
   line-height: .5;
 }
 
-
 .hero-full-screen {
   height: 100vh;
   display: -webkit-flex;
@@ -165,7 +164,7 @@
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url(../images/tree.jpg) center center no-repeat;
+  background: url(../images/tree.jpg) no-repeat bottom;
   background-size: cover;
 }
 
@@ -212,5 +211,39 @@
 .hero-full-screen .top-bar .menu a {
   color: #fefefe;
   font-weight: bold;
+}
+
+.translucent-form-overlay {
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  color: #fefefe;
+  background-color: #113803;
+  opacity: .9;
+}
+
+.translucent-form-overlay .columns.row {
+  display: block;
+}
+
+.translucent-form-overlay h3, .translucent-form-overlay label {
+  color: white;
+  font-size: 1.15rem;
+}
+
+.translucent-form-overlay input, .translucent-form-overlay select {
+  color: black;
+}
+
+.translucent-form-overlay input::-webkit-input-placeholder {
+  color: black;
+}
+
+.translucent-form-overlay input:-ms-input-placeholder {
+  color: black;
+}
+
+.translucent-form-overlay input::placeholder {
+  color: black;
 }
 

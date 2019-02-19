@@ -6,12 +6,18 @@ module.exports = function(sequelize, DataTypes) {
           eventTime: DataTypes.STRING,
           eventLocation: DataTypes.STRING,
           eventInstructions: DataTypes.STRING,
-          complete: DataTypes.BOOLEAN
+          complete: DataTypes.BOOLEAN,
+          usersListId: DataTypes.STRING
           },
           {
                freezeTableName: true,
                tableName: 'eventList'
           }
-     );
+     )
+     // eventList.associate = models => {
+     //      eventList.belongsTo(models.usersList, {
+     //           foreignKey: { allowNull: false }
+     //      })
+     // }
      return eventList;
 }

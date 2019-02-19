@@ -8,12 +8,18 @@ module.exports = function (sequelize, DataTypes) {
           recipeName: DataTypes.STRING,
           recipeLink: DataTypes.STRING,
           recipeMakes: DataTypes.STRING,
-          complete: DataTypes.BOOLEAN,   
+          complete: DataTypes.BOOLEAN,  
+          usersListId: DataTypes.STRING 
           }, 
           {
                freezeTableName: true,
                tableName: 'recipeList'
           }
-     );
+     )
+     // recipeList.associate = models => {
+     //      recipeList.belongsTo(models.usersList, {
+     //           foreignKey: { allowNull: false }
+     //      })
+     // }
     return recipeList;
 };

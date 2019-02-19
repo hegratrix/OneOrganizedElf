@@ -10,11 +10,17 @@ module.exports = function(sequelize, DataTypes) {
           cardState: DataTypes.STRING,
           cardZipCode: DataTypes.STRING,
           complete: DataTypes.BOOLEAN,
+          usersListId: DataTypes.STRING
           }, 
           {
                freezeTableName: true,
                tableName: 'cardsList'
           }
-     );
+     )
+     // cardsList.associate = models => {
+     //      cardsList.belongsTo(models.usersList, {
+     //           foreignKey: { allowNull: false }
+     //      })
+     // }
      return cardsList;
 }

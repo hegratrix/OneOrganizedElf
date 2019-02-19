@@ -8,13 +8,15 @@ function addEventToList() {
     let time = $("#event-time").val().trim()
     let location = $("#event-location").val().trim()
     let instructions = $("#event-instructions").val().trim()
+    let currentID = $('.greeting').attr('id');
     var event = {
         eventName: activity,
         eventDate: date,
         eventTime: time,
         eventLocation: location,
         eventInstructions: instructions,                  
-        complete: false
+        complete: false,
+        usersListId: currentID
     };
     $.post("/eventList", event)
     .then(r => {

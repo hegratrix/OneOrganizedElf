@@ -27,7 +27,8 @@ module.exports = function (app) {
              recipeLink: req.body.recipeLink,
              recipeName: req.body.recipeName,
              recipeMakes: req.body.recipeMakes,
-             complete: req.body.complete               
+             complete: req.body.complete,   
+             usersListId: req.body.usersListId                
         })
              .then(function (dbRecipe) {
                   res.json(dbRecipe);

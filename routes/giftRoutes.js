@@ -27,6 +27,7 @@ module.exports = function (app) {
             giftBudget: req.body.giftBudget,
             giftBought: req.body.giftBought,
             complete: req.body.complete,
+            userListId: req.body.userListId
         })
         .then(function (dbGift) {
             res.json(dbGift);

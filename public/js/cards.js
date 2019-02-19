@@ -26,6 +26,7 @@ function addCardItem() {
    var newCardCityInput = $('#cardCity').val().trim();
    var newCardStateInput = $('#cardState').val().trim();
    var newCardZipCodeInput = $('#cardZipCode').val().trim();
+   let currentID = $('.greeting').attr('id');
    var card = {
       whichList: addingToList,
       cardName: newCardNameInput,
@@ -33,7 +34,8 @@ function addCardItem() {
       cardCity: newCardCityInput,
       cardState: newCardStateInput,
       cardZipCode: newCardZipCodeInput,
-      complete: false
+      complete: false,
+      usersListId: currentID
    };
    $.post("/cardsList", card)
    .then(r => {
@@ -247,3 +249,5 @@ function showAddress(id) {
 function closeModal() {
     $('.modal7').css('display', 'none')
 }
+
+

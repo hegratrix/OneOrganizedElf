@@ -25,13 +25,15 @@ function addRecipeItem() {
     var newRecipeNameInput = $("#recipeType").val();
     var newRecipeLinkInput = $("#recipeLink").val();
     var newRecipeMakesInput = $("#recipeMakes").val();
+    let currentID = $('.greeting').attr('id');
     var recipe = {
         whichList: addingToList,
         recipeImage: newRecipeImageInput,
         recipeName: newRecipeNameInput,
         recipeLink: newRecipeLinkInput,
         recipeMakes: newRecipeMakesInput,         
-        complete: false
+        complete: false,
+        usersListId: currentID
    };
    $.post("/recipeList", recipe) 
    .then(r => {

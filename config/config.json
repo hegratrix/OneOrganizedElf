@@ -1,26 +1,26 @@
 {
      "development": {
-          "username": "root",
-          "password": "rootroot",
-          "database": "masterSantaList_db",
-          "host": "127.0.0.1",
+          "username": "wvngx7r8i4c02bwc",
+          "password": "ralmmk45on2gg2pf",
+          "database": "r22ml6cbq0r44u67",
+          "host": "g8mh6ge01lu2z3n1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
           "port": 3306,
           "dialect": "mysql"
      },
      "test": {
-          "username": "root",
-          "password": "rootroot",
-          "database": "masterSantaList_db",
-          "host": "127.0.0.1",
+          "username": "wvngx7r8i4c02bwc",
+          "password": "ralmmk45on2gg2pf",
+          "database": "r22ml6cbq0r44u67",
+          "host": "g8mh6ge01lu2z3n1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
           "port": 3306,
           "dialect": "mysql"
      },
      "production": {
           "use_env_variable" : "JAWSDB_URL",
-          "host" : "wp433upk59nnhpoh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-          "username": "agbps0cmhnwq45pd", 
-          "password": "n5sk8eoje7b8yf42",
-          "database": "th0wznws3yvrkax9", 
+          "host" : "g8mh6ge01lu2z3n1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+          "username": "wvngx7r8i4c02bwc", 
+          "password": "ralmmk45on2gg2pf",
+          "database": "r22ml6cbq0r44u67", 
           "dialect": "mysql"
      }
 }

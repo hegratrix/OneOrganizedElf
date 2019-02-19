@@ -22,7 +22,7 @@
     font-size: 25px;
     font-weight: 600;
     padding: 5px;
-  }
+}
 
 .countdown-div {
     background-image: url('../images/6.jpg')
@@ -35,134 +35,134 @@
 }
 
 .logoElf {
-    position: absolute;
-    height: 105px;
-    z-index: 1;
-    margin-top: -40px;
+position: absolute;
+height: 105px;
+z-index: 1;
+margin-top: -40px;
 }
 
 .app-title {
-    font-size: 33px;
-    padding-top: 5px;
-    padding-bottom: 25px;
-    color: white;
-    font-family: 'Aref Ruqaa', serif;
-  }
-
-.log-in-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 9px;
-    padding-top: 9px;
+font-size: 33px;
+padding-top: 5px;
+padding-bottom: 25px;
+color: white;
+font-family: 'Aref Ruqaa', serif;
 }
 
-.log-in-button {
-    padding: 8px;
-    font-size: 12px;
+.login-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login-button {
+    padding: 9px;
+    font-size: 13px;
     color: white;
     border: 1px solid white;
+    margin: 2px;
 }
 
-.log-in-button:hover {
+.login-button:hover {
     background-color: #7abd20;
     color: #b60a0a;
 }
 
 .sign-up {
-    font-size: 12px;
-    color: white;
+font-size: 14px;
+color: white;
 }
 
-.sign-up:hover {
-    font-size: 14px;
-}
+/* .sign-up:hover {
+font-size: 14px;
+} */
 
 .list-title {
-    text-align: center;
-    font-family: 'Aref Ruqaa', serif;
-    font-size: 32px;
+text-align: center;
+font-family: 'Aref Ruqaa', serif;
+font-size: 32px;
 }
 
 .add-to-list {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-    height: 35px;
-    width: 60px;
-    font-size: 11px;
-    color: white;
-    background-color: #b60a0a;
-    text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+display: block;
+margin-left: auto;
+margin-right: auto;
+border-radius: 50%;
+height: 35px;
+width: 60px;
+font-size: 11px;
+color: white;
+background-color: #b60a0a;
+text-align: center;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .add-to-table {
-    border-radius: 50%;
-    font-size: 10px;
-    height: 20px;
-    width: 40px;
-    color: white;
-    background-color: #b60a0a;
-    text-align: center;
-    display: inline-block;
-    margin: 6px 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border-radius: 50%;
+font-size: 10px;
+height: 20px;
+width: 40px;
+color: white;
+background-color: #b60a0a;
+text-align: center;
+display: inline-block;
+margin: 6px 5px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 table {
-    width: auto;
-    margin-right: auto;
-    margin-left: auto;
-    font-size: 14px;
+width: auto;
+margin-right: auto;
+margin-left: auto;
+font-size: 14px;
 }
 
 table tbody td, table tbody th {
-    padding-top: 0;
-    padding-bottom: 0;
-    background-color: white;
-    border: white;
-    text-align: left;
+padding-top: 0;
+padding-bottom: 0;
+background-color: white;
+border: white;
+text-align: left;
 }
 
 .checkbox {
-    margin-right: 13px;
+margin-right: 13px;
 }
 
 #show-gift-details, #show-gift-done {
-    display: none;
+display: none;
 }
 
 #show-wish-details, #show-wish-done {
-    display: none;
+display: none;
 }
 
 #show-card-details, #show-card-done {
-    display: none;
+display: none;
 }
 
 #show-recipe-details, #show-recipe-done {
-    display: none;
+display: none;
 }
 
 #show-grocery-details, #show-grocery-done {
-    display: none;
+display: none;
 }
 
 .need-to-title {
-    margin-left: 10px;
-    font-family: 'Aref Ruqaa', serif;
-    font-size: 20px;
+margin-left: 10px;
+font-family: 'Aref Ruqaa', serif;
+font-size: 20px;
 }
 
 .recipe-pic {
-    height: 20px;
-  }
-  
+height: 20px;
+}
+
 .recipe-pic:hover {
-    width: 250px;
-    height: auto;
+width: 250px;
+height: auto;
 }
 
 .strip-border {
@@ -179,7 +179,7 @@ table tbody td, table tbody th {
 }
 
 .header-tabs {
-    display: flex;
+display: flex;
 }
 
 .input-add-to-list {
@@ -210,10 +210,6 @@ a {
 
 a:hover {
     color: #b60a0a;
-}
-
-.main-content-div {
-    overflow-y: auto;
 }
 
 td {
@@ -263,18 +259,18 @@ th {
     position: absolute;
     height: 260px;
     display: none;
-  }
+}
 
-  .question {
-      font-size: 20px;
-      color: white;
-  }
+.question {
+    font-size: 20px;
+    color: white;
+}
 
-  input::placeholder {
-      color: darkgray;
-  }
+input::placeholder {
+    color: darkgray;
+}
 
-  .modal-button {
+.modal-button {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -285,11 +281,11 @@ th {
     background-color: #375c00;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+}
 
 #gift-title {
     font-family: Arial, Helvetica, sans-serif;
-  }
+}
 
 .id-number {
     display: none;
@@ -337,7 +333,7 @@ th {
     position: absolute;
     height: auto;
     display: none;
-  }
+}
 
 .modal9 {
     background: #b60a0a;
@@ -352,21 +348,21 @@ th {
     position: absolute;
     height: auto;
     display: none;
-  }
+}
 
-  .modal-input {
+.modal-input {
     font-family: Arial, Helvetica, sans-serif;
-  }
-  .modal-input::placeholder {
-      color: black;
-  }
+}
+.modal-input::placeholder {
+    color: black;
+}
 
-  .modal-label {
-      color:white;
-      font-size: 18px;
-  }
+.modal-label {
+    color:white;
+    font-size: 18px;
+}
 
-  .delete-list-button {
+.delete-list-button {
     margin-left: 45px;
     height: 17px;
     width: 36px;
@@ -376,26 +372,26 @@ th {
     border: 1px solid #375c00;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+}
 
-  .delete-list-div {
-      display: inline;
-      justify-content: space-between;
-  }
+.delete-list-div {
+    display: inline;
+    justify-content: space-between;
+}
 
-  #info {
-      font-size: 10px;
-      text-align: center;
-  }
+#info {
+    font-size: 10px;
+    text-align: center;
+}
 
-  .row {
+.row {
     margin-right: auto;
     margin-left: auto;
     flex-direction: row;
     flex-wrap: wrap;
-  }
+}
 
-  .event-btn {
+.event-btn {
     height: 25px;
     width: 36px;
     font-size: 10px;
@@ -405,11 +401,11 @@ th {
     border: 1px solid #375c00;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+}
 
-  #edit-event {
-      margin: 5px;
-  }
+#edit-event {
+    margin: 5px;
+}
 
 #index-container {
     display: flex;
@@ -443,3 +439,64 @@ th {
     color: white;
     font-size: 27px;
 }
+
+.sign-up-modal, .login-modal {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    width: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+
+.sign-up-modal .button, .login-modal .button {
+    background-color: #b60a0a;
+    font-size: 1.25rem;
+    padding: 10px;
+}
+
+.sign-up-modal .button:hover, .login-modal .button:hover {
+    background-color: #375c00;
+}
+
+#password1-register {
+    margin-bottom: 2px;
+}
+
+.close, .close2 {
+    color: white;
+    float: right;
+    font-size: 23px;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+  }
+  
+  .close:hover,
+  .close:focus,
+  .close2:hover,
+  .close2:focus {
+    color: #7abd20;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #log-out-btn {
+      display: none;
+    }
+
+    #if-logged-in {
+        display: none;
+    }
+
+    .greeting {
+        font-size: 12px;
+        color: white;
+        margin-top: -15px;
+    }
+
+    .button-div {
+        display: flex;
+        flex-wrap: nowrap;
+    }

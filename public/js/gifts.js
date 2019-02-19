@@ -17,24 +17,28 @@ function displayLists() {
                 </div>
                 `)
         });
-    });
+    })
 }
 
 function addGiftItem() {
     event.preventDefault()
     let newGiftNameInput = $("#giftName").val().trim()
     let newGiftBudgetInput = $("#giftBudget").val().trim()
+    let currentID = $('.greeting').attr('id')
     var gift = {
         whichList: addingToList,
         giftName: newGiftNameInput,
         giftBudget: newGiftBudgetInput,                          
-        complete: false
+        complete: false,
+        userListId: currentID
     };
     $.post("/giftsList", gift)
     .then(r => {
         $("#giftName").val('')
         $("#giftBudget").val('')
         showList(addingToList)
+    }).catch(e => {
+        console.log(errors)
     })
 }
 

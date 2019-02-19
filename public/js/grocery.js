@@ -3,7 +3,6 @@ let addingToList
 
 function displayLists() {
     groceryLists = []
-    console.log(groceryLists)
     $.get("/groceryList", function (data) {
         for (let i=0; i< data.length; i++) {
             if (groceryLists.includes(data[i].whichList) === false) {
@@ -24,11 +23,13 @@ function addGroceryItem() {
     event.preventDefault()
     let newGroceryQuantityInput = $("#groceryQuantity").val().trim()
     let newGroceryItemInput = $("#groceryItem").val().trim()
+    let currentID = $('.greeting').attr('id');
     var grocery = {
         whichList: addingToList,
         groceryAmount: newGroceryQuantityInput,
         groceryName: newGroceryItemInput,                          
-        complete: false
+        complete: false,
+        usersListId: currentID
    };
    $.post("/groceryList", grocery)  
    .then(r => {
