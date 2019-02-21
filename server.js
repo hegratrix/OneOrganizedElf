@@ -10,5 +10,5 @@ app.use(bodyparser.json())
 require('./routes')(app)
 
 require('./models').sequelize.sync().then(() => {
-    app.listen(process.env.PORT||3000, () => console.log('http://localhost:3000'))
+	app.listen(process.env.PORT||3000, () => console.log('http://localhost:3000'))
 })

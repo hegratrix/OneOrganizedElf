@@ -11,45 +11,45 @@ var db = require("../models");
 // =============================================================
 module.exports = function (app) {
 
-    // GET route for getting all of the events data
-app.get("/eventList", function (req, res) {
-    db.eventList.findAll({})
-         .then(function (dbEvent) {
-              res.json(dbEvent);
-         });
-});
+	// GET route for getting all of the events data
+	app.get("/eventList/:id", function (req, res) {
+    db.eventList.findAll({where: {usersListId: req.params.id}})
+		.then(function (dbEvent) {
+			res.json(dbEvent);
+		});
+	});
 
-    // POST route for saving a new event 
-app.post("/eventList", function (req, res) {
+	// POST route for saving a new event 
+	app.post("/eventList", function (req, res) {
     db.eventList.create({
-         eventName: req.body.eventName,
-         eventDate: req.body.eventDate,
-         eventTime: req.body.eventTime,
-         eventLocation: req.body.eventLocation,
-         eventInstructions: req.body.eventInstructions,
-         complete: req.body.complete,    
-         usersListId: req.body.usersListId 
+			eventName: req.body.eventName,
+			eventDate: req.body.eventDate,
+			eventTime: req.body.eventTime,
+			eventLocation: req.body.eventLocation,
+			eventInstructions: req.body.eventInstructions,
+			complete: req.body.complete,    
+			usersListId: req.body.usersListId 
     })
-         .then(function (dbEvent) {
-              res.json(dbEvent);
-         });
-});
+		.then(function (dbEvent) {
+			res.json(dbEvent);
+		});
+	});
 
-// DELETE route for deleting events
-app.delete("/eventList/:id", function (req, res) {
-     db.eventList.destroy({where: {id: req.params.id}})
-          .then(function (dbEvent) {
-               res.json(dbEvent);
-          });
- });
+	// DELETE route for deleting events
+	app.delete("/eventList/:id", function (req, res) {
+		db.eventList.destroy({where: {id: req.params.id}})
+		.then(function (dbEvent) {
+			res.json(dbEvent);
+		});
+	});
 
-     // PUT route for updating gifts
-     app.put("/eventList/:id", function (req, res) {          
-          db.eventList.update(req.body, { where: { id: req.params.id }})
-          .then(() => res.sendStatus(200))
-          .catch(e => console.log(e))
-      });
-}
+	// PUT route for updating gifts
+	app.put("/eventList/:id", function (req, res) {          
+		db.eventList.update(req.body, { where: { id: req.params.id }})
+		.then(() => res.sendStatus(200))
+		.catch(e => console.log(e))
+	});
+};
 
 
 
